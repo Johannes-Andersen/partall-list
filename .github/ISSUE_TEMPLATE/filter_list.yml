@@ -1,0 +1,41 @@
+name: Filter list
+description: Report bugs or ask for new filters.
+title: '[Filter list]: '
+assignees:
+  - johannes-andersen
+labels:
+  - filter list
+body:
+  - type: checkboxes
+    id: reproduce
+    attributes:
+      label: I tried to reproduce the issue when...
+      options:
+        - label: This was the only active filter list...
+          required: true
+        - label: The filter list was up to date
+          required: true
+        - label: The adblocker was up to date
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: >-
+        Explain what the issue is about in detail. Include links and
+        screenshots.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Filter list and version
+      description: The version number tried and the filter list name
+    validations:
+      required: true
+  - type: input
+    id: Browser
+    attributes:
+      label: Browser name, version and adblocker you use
+    validations:
+      required: true

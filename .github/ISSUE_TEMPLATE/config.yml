@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security policy
+    url: https://github.com/Johannes-Andersen/partall-list/blob/main/SECURITY.md
+    about: For creating a security report.
+  - name: Code of Conduct
+    url: https://github.com/Johannes-Andersen/partall-list/blob/main/CODE_OF_CONDUCT.md
+    about: Information on how to behave in the community.
+  - name: Contributing
+    url: https://github.com/Johannes-Andersen/partall-list/blob/main/CONTRIBUTING.md
+    about: How to get started contributing to the project.

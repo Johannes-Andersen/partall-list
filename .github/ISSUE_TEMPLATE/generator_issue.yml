@@ -1,0 +1,31 @@
+name: Generator
+description: Report bugs or feature request for the adblock list generator itself.
+title: '[Generator]: '
+assignees:
+  - johannes-andersen
+labels:
+  - generator
+body:
+  - type: checkboxes
+    id: Prerequisites
+    attributes:
+      label: Prerequisites
+      description: Make sure to read the information below
+      options:
+        - label: >-
+            I verified that this is not a filter list issue. Report any issues
+            with filter lists using the filter report button instead.
+          required: true
+        - label: >-
+            I performed a search for other issues to avoid opening a duplicate
+            issue.
+          required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: Explain what the issue is about
+      description: >-
+        Explain what the issue is about. Examples around what you want added,
+        fixed or removed.
+    validations:
+      required: true
