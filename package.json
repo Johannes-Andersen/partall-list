@@ -16,9 +16,9 @@
     "format:fix": "prettier --write \"**/*.{ts,tsx,js,md}\"",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "echo \"Todo: add tests\" && exit 0",
+    "test": "vitest",
     "clean": "rm -rf dist",
-    "build": "npm run clean && tsc"
+    "build": "npm run clean && ts-node src/index.ts"
   },
   "engines": {
     "node": ">=19",
@@ -36,7 +36,8 @@
     "url": "https://github.com/Johannes-Andersen/partall-list/issues"
   },
   "dependencies": {
-    "@gorhill/ubo-core": "0.1.25"
+    "@gorhill/ubo-core": "0.1.25",
+    "ts-node": "10.9.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "5.48.0",
@@ -44,6 +45,7 @@
     "eslint": "8.31.0",
     "eslint-config-prettier": "8.6.0",
     "prettier": "2.8.1",
-    "typescript": "4.9.4"
+    "typescript": "4.9.4",
+    "vitest": "0.26.3"
   }
 }
