@@ -1,0 +1,49 @@
+{
+  "name": "partall-list",
+  "description": "Adblock builder and list generator",
+  "keywords": [
+    "filter",
+    "ads",
+    "adblock",
+    "ublock"
+  ],
+  "private": true,
+  "license": "GPL-3.0",
+  "homepage": "https://partall.no",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --check \"**/*.{ts,tsx,js,md}\"",
+    "format:fix": "prettier --write \"**/*.{ts,tsx,js,md}\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "echo \"Todo: add tests\" && exit 0",
+    "clean": "rm -rf dist",
+    "build": "npm run clean && tsc"
+  },
+  "engines": {
+    "node": ">=19",
+    "npm": ">=8"
+  },
+  "author": {
+    "name": "Johannes Andersen",
+    "url": "https://johand.dev/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Johannes-Andersen/partall-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Johannes-Andersen/partall-list/issues"
+  },
+  "dependencies": {
+    "@gorhill/ubo-core": "0.1.25"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.48.0",
+    "@typescript-eslint/parser": "5.48.0",
+    "eslint": "8.31.0",
+    "eslint-config-prettier": "8.6.0",
+    "prettier": "2.8.1",
+    "typescript": "4.9.4"
+  }
+}
