@@ -6,7 +6,7 @@ Since this is mostly a tool you run on your own machine, I am posting this polic
 
 ## Reporting a vulnerability
 
-Please report security vulnerabilities to Johannes via the built in [Github advisories](https://github.com/Johannes-Andersen/partall-list/security/advisories/new). 
+Please report security vulnerabilities to Johannes via the built in [Github advisories](https://github.com/Johannes-Andersen/partall-list/security/advisories/new).
 I try my best to send a response back to you within 72 hours. Please allow the vulnerability to be fixed before any public exposure, as this will help protect all of the people who use a fork of the repo.
 
 Within the report of the issue, please provide the following information:
