@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@gorhill/ubo-core": "0.1.25",
-    "glob": "8.0.3",
+    "glob": "8.1.0",
     "ts-node": "10.9.1"
   },
   "devDependencies": {
