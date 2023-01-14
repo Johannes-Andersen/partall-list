@@ -17,7 +17,15 @@
     },
     {
       "extends": "packages:linters",
-      "groupName": "linters"
+      "groupName": "linters",
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "groupName": "github actions",
+      "automerge": true,
+      "platformAutomerge": true
     }
   ],
   "force": {
