@@ -1,0 +1,29 @@
+{
+  "extends": ["config:base"],
+  "labels": ["type: dependencies"],
+  "vulnerabilityAlerts": {
+    "labels": ["type: dependencies", "type: security"],
+    "automerge": true
+  },
+  "rollbackPrs": true,
+  "reviewersFromCodeOwners": true,
+  "prHourlyLimit": 10,
+  "lockFileMaintenance": { "enabled": true, "automerge": true },
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "platformAutomerge": true
+    },
+    {
+      "extends": "packages:linters",
+      "groupName": "linters"
+    }
+  ],
+  "force": {
+    "constraints": {
+      "node": "19",
+      "npm": "8"
+    }
+  }
+}
