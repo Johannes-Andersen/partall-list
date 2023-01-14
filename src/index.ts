@@ -1,8 +1,10 @@
-import { abcFilter } from './filters/abc'
 import createFileHeader from './utils/createHeader'
 import formatRule from './utils/formatRule'
 import generateVersion from './utils/generateVersion'
+import getFilters from './utils/getFilters'
 import writeFilterFile from './utils/writeFilterFile'
+
+const filters = getFilters()
 
 const header = createFileHeader({
   title: 'hello there',
@@ -11,7 +13,11 @@ const header = createFileHeader({
   expiresInDays: 7,
 })
 
-const test = formatRule(abcFilter)
+const test = filters
+  .map((filter) => {
+    return formatRule(filter)
+  })
+  .join('\n\n')
 
 const data = `${header} \n\n${test}`
 
